@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppin", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary: #00a97f;
+  --light: rgba(133, 198, 218, 255);
+  --dark: rgba(13, 13, 10, 255);
+  --darker: rgba(234, 157, 90, 255);
+  --lighter: #cbd6cf;
+  --lighter1: #c3dacc86;
+  --lighter2: #e4f0e9da;
+  --darken: #cca27e;
+  --color: orangered;
+  --search: #ff6000;
+  --primary1: #2b3d4c;
+  --primary2: #354d61;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--search);
+}
+h2 {
+  font-weight: 400;
+  font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+  max-width: 40px;
+  min-height: 40px;
+  padding: 1.5rem;
+}
+.logo:hover {
+  opacity: 0.5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.5s ease;
+  color: #2b3d4c;
+}
+a:hover {
+  color: var(--primary);
+}
+p {
+  font-size: 14px;
+  margin-bottom: 0rem;
+}
+button {
+  padding: 12px 10px;
+  font-size: 14px;
+  background-color: var(--primary1);
+  color: #fff;
+}
+.input-group button {
+  background: transparent;
+  font-size: 14px;
+}
+.input-group input:focus {
+  outline: none;
+}
+.input-group-text {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header start css  */
+.header-top-strip {
+  background: var(--lighter1);
 }
+.header-upper {
+  background: var(--lighter);
+}
+/* Header end css  */
+
+/* footer start css  */
+footer .pay img {
+  padding: 10px 8px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  transition: 0.5s ease;
+}
+
+footer .pay img:hover {
+  transform: translateY(-10px);
+}
+
+footer .socials {
+  margin: 0 10px;
+}
+
+.footer-link {
+  font-size: 18px;
+  margin: 0 10px;
+  color: var(--darken);
+  transition: 0.5s ease;
+}
+.footer-link:hover {
+  color: var(--search);
+}
+
+.footer-links {
+  font-size: 16px;
+  color: var(--primary1);
+  transition: 0.5s ease;
+}
+.footer-links:hover {
+  color: var(--search);
+}
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-title {
+  border-bottom: 2px solid var(--darken);
+  width: 30%;
+}
+.footer-tel {
+  color: var(--darken);
+  transition: 0.5s ease;
+}
+.footer-tel:hover {
+  color: var(--primary1);
+}
+.text-center {
+  color: var(--primary);
+}
+/* footer end css  */
