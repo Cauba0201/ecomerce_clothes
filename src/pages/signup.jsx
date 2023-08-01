@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Login() {
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
@@ -23,8 +24,8 @@ function Login() {
           <div className="col-lg-4 col-md-8 col-sm-10">
             <div className="card">
               <div className="card-body p-5">
-                <h2 className="text-center">LOGIN</h2>
-                <p className="text-center mb-4">Welcome Back !</p>
+                <h2 className="text-center">SIGN UP</h2>
+                <p className="text-center mb-4">Join us in shopping !</p>
                 <form onClick={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label mb-3">
@@ -52,18 +53,34 @@ function Login() {
                       required
                     />
                   </div>
+                  <div className="mb-3">
+                    <label
+                      htmlFor="confirmPassword"
+                      className="form-label mb-3 "
+                    >
+                      Confirm Your Password
+                    </label>
+                    <input
+                      type="password"
+                      value={confirmPassword}
+                      placeholder="Rewrite password here "
+                      className="form-control confirmPassword"
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                      required
+                    />
+                  </div>
                   {error && <div className="alert alert-danger">{error}</div>}
                   <div className="mb-3">
                     <Link to="/forgotpassword">Forgot Password</Link>
                   </div>
                   <div className="mb-3 d-flex justify-content-between align-items-center">
-                    <p className="m-0">Dont have an account?</p>
-                    <Link to="/signup" className="form-link">
-                      Sign Up
+                    <p className="m-0">Have an account?</p>
+                    <Link to="/login" className="form-link">
+                      Login
                     </Link>
                   </div>
                   <div className="gap-2 d-grid">
-                    <button type="submit">Login</button>
+                    <button type="submit">Sign Up</button>
                   </div>
                 </form>
               </div>
@@ -73,6 +90,6 @@ function Login() {
       </div>
     </section>
   );
-}
+};
 
-export default Login;
+export default SignUp;

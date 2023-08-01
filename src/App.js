@@ -10,6 +10,8 @@ import Contact from "./pages/contact.jsx";
 import Cart from "./pages/cart.jsx";
 import Login from "./pages/login.jsx";
 import Wishlist from "./pages/wishlist.jsx";
+import SignUp from "./pages/signup.jsx";
+import Forgotpassword from "./pages/forgotpassword.jsx";
 
 // import { ShopContext } from "./components/ShopContext.jsx";
 
@@ -28,6 +30,8 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/forgotpassword" element={<Forgotpassword />} />
           </Route>
         </Routes>
       </BrowserRouter>
