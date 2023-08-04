@@ -33,9 +33,8 @@ h2 {
 }
 
 .logo {
-  max-width: 40px;
-  min-height: 40px;
-  padding: 1.5rem;
+  max-width: 100%;
+  height: 40px;
 }
 .logo:hover {
   opacity: 0.5px;
@@ -55,19 +54,23 @@ a:hover {
 }
 p {
   font-size: 14px;
-  margin-bottom: 0rem;
+  font-weight: 400;
+  margin: 0;
+  text-decoration: none;
+  color: var(--primary1);
 }
 button {
   padding: 12px 10px;
   font-size: 14px;
-  background-color: var(--primary1);
-  color: #fff;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--primary1);
 }
 .input-group button {
   background: transparent;
   font-size: 14px;
 }
-.input-group input:focus {
+input:focus {
   outline: none;
 }
 .input-group-text {
@@ -89,9 +92,43 @@ button {
   color: var(--primary1);
 }
 
+.button-linker {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: var(--primary1);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.button-linker:hover {
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.links {
+  padding: 0 10px;
+}
+
+.gap-30 {
+  padding: 0 10px;
+}
+
 .hero .hero-details img {
   width: 50px;
 }
+
+.featured-products button {
+  align-items: center;
+  transition: 0.5s ease;
+  background: var(--primary2);
+  color: white;
+}
+/* nav-bar start */
+
+/* nav-bar end */
 
 /* Header start css  */
 .header-top-strip {
@@ -99,6 +136,16 @@ button {
 }
 .header-upper {
   background: var(--lighter);
+  transition: 0.5s ease;
+}
+
+.header-upper .menu-links a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
+  transition: 0.5s ease;
 }
 /* Header end css  */
 
@@ -206,6 +253,48 @@ footer p {
 
 /* login end css  */
 
+/* banner start css  */
+.banner .back-details {
+  background-image: url(imgs/bannerhome/back.jpg);
+  height: 80vh;
+  background-position: top 25% right 0;
+  background-size: cover;
+  width: 100%;
+  padding: 0 80px;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .back-details h1 {
+  font-size: 52px;
+}
+.banner .back-details h2 {
+  font-size: 32px;
+}
+.banner .back-details p {
+  color: var(--primary1);
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .back-details h1 {
+    font-size: 36px;
+  }
+  .banner .back-details h2 {
+    font-size: 24px;
+  }
+  .banner .back-details p {
+    height: auto;
+    background-position: center;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* banner end css  */
+
 /* signup start css  */
 
 /* signup end css  */
@@ -241,3 +330,177 @@ footer p {
 }
 
 /* Blog page end css  */
+
+/* feartureProduct start css  */
+.feartured-products button:hover {
+  color: var(--primary1);
+  background: transparent;
+}
+.feartured-products .card {
+  border-radius: 20px;
+  min-width: 250;
+  padding: 12px 10px;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+
+.feartured-products .card:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+}
+.feartured-products .card img {
+  min-width: 100%;
+  min-height: 220px;
+  border-radius: 20px;
+}
+
+.feartured-products .action-bar {
+  top: 30%;
+  right: -100px;
+  transition: 0.8s ease;
+}
+
+.feartured-products .card:hover .action-bar {
+  right: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .logo {
+    max-width: 100%;
+    height: 30px;
+  }
+  .feartured-products .action-bar {
+    display: none;
+  }
+  .new-arrivals .action-bar {
+    display: none;
+  }
+}
+.feartured-products .card-text {
+  font-size: 14px;
+  color: var(--darken);
+  text-transform: lowercase;
+}
+.feartured-products h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary1);
+}
+
+.feartured-products .card h5:hover {
+  color: var(--primary1);
+}
+
+.feartured-products .red {
+  color: var(--primary);
+}
+.feartured-products .price strike {
+  color: var(--darker);
+}
+/* feartureProduct end css  */
+
+/* new Arrivals start css  */
+
+.new-arrivals .card {
+  border-radius: 20px;
+  transition: 0.5s ease;
+  max-width: 250px;
+  padding: 12px 10px;
+  overflow: hidden;
+}
+.new-arrivals button {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  font-size: 18px;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  line-height: 0;
+  transition: 0.5s ease;
+}
+.new-arrivals button:hover{
+  background-color: var(--light);
+}
+
+
+
+.new-arrivals .card-text {
+  color: var(--darken);
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.new-arrivals .card img{
+  border-radius: 20px;
+}
+
+.new-arrivals .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.08);
+}
+
+.new-arrivals img {
+  min-width: 100%;
+  min-height: 200px;
+}
+
+.new-arrivals h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary1);
+}
+
+.new-arrivals .price strike {
+  color: var(--darker);
+}
+
+.new-arrivals .red {
+  color: var(--primary);
+}
+
+.new-arrivals .action-bar {
+  top: 30%;
+  right: -100px;
+  transition: 0.8s ease;
+}
+
+.new-arrivals .card:hover .action-bar {
+  right: 80px;
+}
+/* new Arrivals end css  */
+
+/* repair start css  */
+.repair-details {
+  background: url(./imgs/banner/b2.jpg);
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  justify-content: center;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.repair-details button {
+  background-color: var(--darker);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.repair-details button:hover {
+  background-color: transparent;
+  border: 1px solid var(--darken);
+}
+
+/* repair end css  */
+
+/* hot deals start css  */
+
+/* hot deals end css  */
+

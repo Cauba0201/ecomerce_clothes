@@ -1,67 +1,226 @@
-import img1 from "./imgs/products/f1.jpg";
-import img2 from "./imgs/products/f2.jpg";
-import img3 from "./imgs/products/f3.jpg";
-import img4 from "./imgs/products/f4.jpg";
-import img5 from "./imgs/products/f5.jpg";
-import img6 from "./imgs/products/f6.jpg";
-import img7 from "./imgs/products/f7.jpg";
-import img8 from "./imgs/products/f8.jpg";
+import pr1 from "../src/imgs/products/f1.jpg";
+import pr2 from "../src/imgs/products/f2.jpg";
+import pr3 from "../src/imgs/products/f3.jpg";
+import pr4 from "../src/imgs/products/f4.jpg";
+import pr5 from "../src/imgs/products/f5.jpg";
+import pr6 from "../src/imgs/products/f6.jpg";
+import pr7 from "../src/imgs/products/f7.jpg";
+import pr8 from "../src/imgs/products/f8.jpg";
+import pro1 from "../src/imgs/products/n1.jpg";
+import pro2 from "../src/imgs/products/n2.jpg";
+import pro3 from "../src/imgs/products/n3.jpg";
+import pro4 from "../src/imgs/products/n4.jpg";
+import pro5 from "../src/imgs/products/n5.jpg";
+import pro6 from "../src/imgs/products/n6.jpg";
+import pro7 from "../src/imgs/products/n7.jpg";
+import pro8 from "../src/imgs/products/n8.jpg";
+import img1 from "../src/imgs/products/img1.png";
+import img2 from "../src/imgs/products/img2.png";
+import img3 from "../src/imgs/products/img3.png";
+import img4 from "../src/imgs/products/img4.png";
+import img5 from "../src/imgs/products/img5.png";
+import img6 from "../src/imgs/products/img6.png";
+import img7 from "../src/imgs/products/img7.png";
+import img8 from "../src/imgs/products/img8.png";
 
 export const PRODUCTS = [
   {
+    id: 0,
+    image: pr1,
+    name: "Slim Fit Dress Shirt",
+    price: 49.9,
+    brand: "Calvin Klein",
+  },
+  {
     id: 1,
-    name: "áo polo nam",
-    price: 2300000,
-    img: img1,
-    brand: "cocodie",
+    image: pr2,
+    name: "Men's Dri-FIT T-Shirt",
+    price: 24.9,
+    brand: "Nike",
+    status: "in stock",
+    rate: "60% Off",
   },
   {
     id: 2,
-    name: "áo polo nam",
-    price: 6000000,
-    img: img2,
-    brand: "Luis Vuitton",
+    image: pr3,
+    name: "Women's Badge of Sport Tee",
+    price: 39.9,
+    brand: "Adidas",
+    status: "in stock",
+    rate: "50% Off",
   },
   {
     id: 3,
-    name: "váy ngắn",
-    price: 200000,
-    img: img3,
-    brand: "Prada",
+    image: pr4,
+    name: "Men's 1950s Sportswear T-Shirt",
+    price: 49.9,
+    brand: "Levi s",
+    status: "in stock",
+    rate: "10% Off",
   },
   {
     id: 4,
-    name: "Giay lười",
-    price: 5000000,
-    img: img4,
-    brand: "Gucci",
+    image: pr5,
+    name: "Men's Tech 2.0 Short Sleeve T-Shirt",
+    price: 49.9,
+    brand: "Under Armour",
+    status: "in stock",
+    rate: "90% Off",
   },
   {
     id: 5,
-    name: "đồng hồ nam",
-    price: 2300000,
-    img: img5,
-    brand: "Rolex",
+    image: pr6,
+    name: "Women's Basic Tee, Men's Rebel Bold Tee",
+    price: 9.9,
+    brand: "H&M",
+    status: "in stock",
+    rate: "95% Off",
   },
   {
     id: 6,
-    name: "áo polo nữ",
-    price: 2300000,
-    img: img6,
-    brand: "Uniquilo",
+    image: pr7,
+    name: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
+    price: 39.5,
+    brand: "Puma",
+    status: "in stock",
+    rate: "20% Off",
   },
   {
     id: 7,
-    name: "áo polo nữ",
-    price: 2300000,
-    img: img7,
-    brand: "Uniquilo",
+    image: pr8,
+    name: "Women's Classic Fit Crewneck T-Shirt",
+    price: 29.5,
+    brand: "Ralph Lauren",
   },
   {
     id: 8,
-    name: "áo polo nữ",
-    price: 2300000,
-    img: img8,
-    brand: "Uniquilo",
+    image: pro1,
+    name: "Slim Fit Dress Shirt",
+    price: 49.9,
+    brand: "Calvin Klein",
+  },
+  {
+    id: 9,
+    image: pro2,
+    name: "Men's Dri-FIT T-Shirt",
+    price: 24.9,
+    brand: "Nike",
+  },
+  {
+    id: 10,
+    image: pro3,
+    name: "Women's Badge of Sport Tee",
+    price: 39.9,
+    brand: "Adidas",
+  },
+  {
+    id: 11,
+    image: pro4,
+    name: "Men's 1950s Sportswear T-Shirt",
+    price: 49.9,
+    brand: "Levi s",
+  },
+  {
+    id: 12,
+    image: pro5,
+    name: "Men's Tech 2.0 Short Sleeve T-Shirt",
+    price: 49.9,
+    brand: "Under Armour",
+  },
+  {
+    id: 13,
+    image: pro6,
+    name: "Women's Basic Tee, Men's Rebel Bold Tee",
+    price: 9.9,
+    brand: "H&M",
+  },
+  {
+    id: 14,
+    image: pro7,
+    name: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
+    price: 39.5,
+    brand: "Puma",
+  },
+  {
+    id: 15,
+    image: pro8,
+    name: "Women's Classic Fit Crewneck T-Shirt",
+    price: 29.5,
+    brand: "Ralph Lauren",
+  },
+];
+
+export const PRODUCTS1 = [
+  {
+    id: 16,
+    image: img1,
+    name: "Slim Fit Dress Shirt",
+    price: 49.9,
+    brand: "Calvin Klein",
+    status: "in stock",
+    rate: "60% off",
+  },
+  {
+    id: 17,
+    image: img2,
+    name: "Men's Dri-FIT T-Shirt",
+    price: 24.9,
+    brand: "Nike",
+    status: "in stock",
+    rate: "60% off",
+  },
+  {
+    id: 18,
+    image: img3,
+    name: "Women's Badge of Sport Tee",
+    price: 39.9,
+    brand: "Adidas",
+    status: "in stock",
+    rate: "60% off",
+  },
+  {
+    id: 19,
+    image: img4,
+    name: "Men's 1950s Sportswear T-Shirt",
+    price: 49.9,
+    brand: "Levi s",
+    status: "out of stock",
+    rate: "normal rates",
+  },
+  {
+    id: 20,
+    image: img5,
+    name: "Men's Tech 2.0 Short Sleeve T-Shirt",
+    price: 49.9,
+    brand: "Under Armour",
+    status: "out of stock",
+    rate: "normal rates",
+  },
+  {
+    id: 21,
+    image: img6,
+    name: "Women's Basic Tee, Men's Rebel Bold Tee",
+    price: 9.9,
+    brand: "H&M",
+    status: "out of stock",
+    rate: "normal rates",
+  },
+  {
+    id: 22,
+    image: img7,
+    name: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
+    price: 39.5,
+    brand: "Puma",
+    status: "out of stock",
+    rate: "normal rates",
+  },
+  {
+    id: 23,
+    image: img8,
+    name: "Women's Classic Fit Crewneck T-Shirt",
+    price: 29.5,
+    brand: "Ralph Lauren",
+    status: "out of stock",
+    rate: "normal rates",
   },
 ];

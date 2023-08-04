@@ -4,7 +4,6 @@ import b2 from "../imgs/blog/b2.jpg";
 import b3 from "../imgs/blog/b3.jpg";
 import b4 from "../imgs/blog/b4.jpg";
 import b5 from "../imgs/blog/b5.jpg";
-import ban1 from "../imgs/banner/b19.jpg";
 
 function Blog() {
   return (

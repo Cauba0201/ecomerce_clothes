@@ -29,8 +29,7 @@ function Header() {
           <div className="row align-items-center m-0 ">
             <div className="d-flex justify-content-center col-md-2">
               <Link to="/" className="logo">
-                {/* <img src={imgan} alt="logo_annguyen" className="logo" /> */}
-                <p>Annguyen_shop</p>
+                <img src={imgan} alt="logo_annguyen" className="logo" />
               </Link>
             </div>
 
