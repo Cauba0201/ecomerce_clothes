@@ -22,6 +22,17 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: "file-loader",
       },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
   // Chứa các plugins sẽ cài đặt trong tương lai

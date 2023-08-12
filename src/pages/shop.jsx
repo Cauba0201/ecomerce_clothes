@@ -2,9 +2,9 @@ import React from "react";
 
 function Shop() {
   return (
-    <div>
-      <h1>Shop</h1>
-    </div>
+    <>
+      <h1>shop</h1>
+    </>
   );
 }
 

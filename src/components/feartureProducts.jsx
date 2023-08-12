@@ -21,7 +21,7 @@ const FeartureProducts = () => {
                   <p className="text-danger fs-4">{product.status}</p>
                   <p className="price">
                     <span className="red">
-                      <strike>{product.rate}</strike>
+                      <strike>${product.rate}</strike>
                     </span>
                   </p>
                 </div>

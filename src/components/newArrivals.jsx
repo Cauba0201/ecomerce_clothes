@@ -18,7 +18,7 @@ const NewArrivals = () => {
                 <p className="card-text mb-2">{product1.brand}</p>
                 <h5 className="mb-3">{product1.name}</h5>
                 <div className="card-footer text-center m-auto ">
-                  <p className="text-danger fs-4">{product1.price}</p>
+                  <p className="text-danger fs-4">{product1.status}</p>
                   <p className="price">
                     <span className="red">
                       <strike>{product1.rate}</strike>

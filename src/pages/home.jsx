@@ -9,6 +9,7 @@ import banner1 from "../imgs/banner/b17.jpg";
 import banner2 from "../imgs/banner/b10.jpg";
 import FeartureProducts from "../components/feartureProducts.jsx";
 import NewArrivals from "../components/newArrivals.jsx";
+import Newsletter from "../components/newsletter.jsx";
 
 function Home() {
   return (
@@ -79,7 +80,7 @@ function Home() {
               <div className="card m-auto mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
-                    <img src={banner1} alt="..." />
+                    <img src={banner1} alt="..." className="img-fluid rounded-start" />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
@@ -104,7 +105,7 @@ function Home() {
               <div className="card m-auto mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
-                    <img src={banner2} alt="..." />
+                    <img src={banner2} alt="..." className="img-fluid rounded-start" />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
@@ -127,6 +128,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className="blogs p-5">
         <div className="container-xxl">
           <div className="row">
@@ -139,7 +141,7 @@ function Home() {
 
             <div className="col-md-3 col-sm-6 mb-4">
               <div className="card">
-                <img src={blog1} alt="..." className="card-img-top" />
+                <img src={blog1} alt="..." className="card-img-top img-fluid" />
                 <div className="card-body">
                   <p className="card-text ">
                     Some quick example text to build on the card title and make
@@ -154,7 +156,7 @@ function Home() {
 
             <div className="col-md-3 col-sm-6 mb-4">
               <div className="card">
-                <img src={blog2} alt="..." className="card-img-top" />
+                <img src={blog2} alt="..." className="card-img-top img-fluid" />
                 <div className="card-body">
                   <p className="card-text ">
                     Some quick example text to build on the card title and make
@@ -169,7 +171,7 @@ function Home() {
 
             <div className="col-md-3 col-sm-6 mb-4">
               <div className="card">
-                <img src={blog3} alt="..." className="card-img-top" />
+                <img src={blog3} alt="..." className="card-img-top img-fluid" />
                 <div className="card-body">
                   <p className="card-text ">
                     Some quick example text to build on the card title and make
@@ -184,7 +186,7 @@ function Home() {
 
             <div className="col-md-3 col-sm-6 mb-4">
               <div className="card">
-                <img src={blog4} alt="..." className="card-img-top" />
+                <img src={blog4} alt="..." className="card-img-top img-fluid" />
                 <div className="card-body">
                   <p className="card-text ">
                     Some quick example text to build on the card title and make
@@ -199,6 +201,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Newsletter/>
     </>
   );
 }
