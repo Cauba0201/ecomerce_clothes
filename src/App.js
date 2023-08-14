@@ -12,30 +12,29 @@ import Login from "./pages/login.jsx";
 import Wishlist from "./pages/wishlist.jsx";
 import SignUp from "./pages/signup.jsx";
 import Forgotpassword from "./pages/forgotpassword.jsx";
-
-// import { ShopContext } from "./components/ShopContext.jsx";
+import Shopcontext from "./components/ShopContext.jsx";
 
 function App() {
   return (
     <>
-      {/* <ShopContext> */}
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/forgotpassword" element={<Forgotpassword />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-      {/* </ShopContext> */}
+      <Shopcontext>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/wishlist" element={<Wishlist />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/forgotpassword" element={<Forgotpassword />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Shopcontext>
     </>
   );
 }
