@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsDetails from "../components/products-details";
+import ProductsDetails from "../components/products-details.jsx";
 
 const Details = () => {
   return (

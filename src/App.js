@@ -13,12 +13,24 @@ import Wishlist from "./pages/wishlist.jsx";
 import SignUp from "./pages/signup.jsx";
 import Forgotpassword from "./pages/forgotpassword.jsx";
 import Shopcontext from "./components/ShopContext.jsx";
+import Details from "./pages/details.jsx";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <>
       <Shopcontext>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
@@ -28,9 +40,11 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/details" element={<Details />} />
               <Route path="/wishlist" element={<Wishlist />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/forgotpassword" element={<Forgotpassword />} />
+              <Route path="/cart" element={<Cart />} />
             </Route>
           </Routes>
         </BrowserRouter>

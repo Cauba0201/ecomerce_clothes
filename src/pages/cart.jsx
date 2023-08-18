@@ -2,9 +2,12 @@ import React from "react";
 import { useState, useContext } from "react";
 import { PRODUCTS, PRODUCTS1 } from "../data";
 import { useNavigate } from "react-router-dom";
+import CartItems from "../components/cartItems.jsx";
+import { ShopContext } from "../components/ShopContext.jsx";
 
 function Cart(props) {
-  const { cartItems, getTotalCartAmount, clearCart } = useContext();
+  const { cartItems, getTotalCartAmount, clearToCart } =
+    useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
   const Navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
@@ -32,11 +35,11 @@ function Cart(props) {
               <div className="p-3">
                 {[...PRODUCTS, ...PRODUCTS1].map((product) => {
                   if (cartItems[product.id] !== 0) {
-                    return <cartItems key={product.id} data={product} />;
+                    return <CartItems key={product.id} data={product} />;
                   }
                 })}
                 <div className="col-12 text-end p-2">
-                  <button onClick={() => clearCart()} id="clear-cart">
+                  <button onClick={() => clearToCart()} id="clear-cart">
                     Clear Cart{" "}
                   </button>
                 </div>
