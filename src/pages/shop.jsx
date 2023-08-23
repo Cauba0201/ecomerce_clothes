@@ -2,6 +2,7 @@ import React from "react";
 import ShopItems from "../components/shopItems.jsx";
 import Hero from "../components/hero.jsx";
 import Newsletter from "../components/newsletter.jsx";
+import bannershop from "../imgs/banner/b1.jpg";
 
 function Shop() {
   return (
@@ -11,12 +12,17 @@ function Shop() {
           <div className="row">
             <div className="col-lg-6">
               <div className="shop-details">
-                <h1 className="text-white">
-                  <b className="title-green">#100%</b>Off On All Products
-                </h1>
-                <p className="text-white fs-5">
-                  Make your Orders We Will Deliver..
-                </p>
+                <div className="img-banner mt-3 ">
+                  <img src={bannershop} alt="..." className="" />
+                </div>
+                <div className=" justify-content-center text-center align-items-center ">
+                  <h1 className="text-white">
+                    <b className="title-green">#100%</b>Off On All Products
+                  </h1>
+                  <p className="text-white fs-5">
+                    Make your Orders We Will Deliver..
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -39,7 +45,7 @@ function Shop() {
                 <ul className="pagination justify-content-center">
                   <li className="page-items">
                     <a className="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden='true'>&laquo;</span>
+                      <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
                   <li className="page-items">
@@ -68,10 +74,9 @@ function Shop() {
           </div>
         </div>
       </section>
-      <Hero/>
+      <Hero />
 
-      <Newsletter/>
-
+      <Newsletter />
     </>
   );
 }

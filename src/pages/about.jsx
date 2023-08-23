@@ -19,9 +19,11 @@ function About() {
   return (
     <>
       <section className="about-wrapper p-5 d-flex justify-content-center align-items-center">
-        {/* <img src={banner} alt="..." className="img img-banner" /> */}
         <div className="container-xxl">
           <div className="row">
+            <div>
+              <img src={banner} alt="..." className="img-fluid img-banner" />
+            </div>
             <div className="col-12">
               <div className="shop-details text-center align-items-center">
                 <h1 className="text-white">#Know</h1>

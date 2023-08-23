@@ -254,18 +254,33 @@ footer p {
 
 /* login end css  */
 
-/* banner start css  */
+/* banner home start css  */
 .banner .back-details {
-  background-image: url(imgs/bannerhome/back.jpg);
-  height: 80vh;
+  height: 40vh;
+  background-position: top 25% right 0;
+  background-size: cover;
+  width: 100%;
+  padding: 0 50px;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: cocenter;
+  flex-direction: column;
+}
+.banner-home {
+  height: 30vh;
   background-position: top 25% right 0;
   background-size: cover;
   width: 100%;
   padding: 0 80px;
-  align-items: flex-start;
+  /* margin-top: 18rem; */
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+.banner-home-img {
+  width: 100%;
+  height: 80vh;
+  margin-top: 18rem;
 }
 
 .banner .back-details h1 {
@@ -311,7 +326,16 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-
+/* .banner-blog{
+  margin-top: 6rem;
+} */
+.banner-blog-img {
+  width: 100%;
+  height: 80vh;
+  margin-top: 27rem;
+  position: inherit;
+  background-size: contain;
+}
 .blogs .card img {
   width: 20rem;
   padding: 20px;
@@ -549,6 +573,10 @@ footer p {
   display: flex;
   flex-direction: column;
 }
+.img-banner {
+  width: 100%;
+  position: inherit;
+}
 
 .about img {
   width: 28rem;
@@ -586,6 +614,10 @@ footer p {
   background-position: center;
   display: flex;
   flex-direction: column;
+}
+.banner-contact {
+  margin-top: 10rem;
+  height: 21vh;
 }
 
 .card-contact {

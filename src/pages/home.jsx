@@ -10,11 +10,19 @@ import banner2 from "../imgs/banner/b10.jpg";
 import FeartureProducts from "../components/feartureProducts.jsx";
 import NewArrivals from "../components/newArrivals.jsx";
 import Newsletter from "../components/newsletter.jsx";
+import bannerhome from "../imgs/bannerhome/back.jpg";
 
 function Home() {
   return (
     <>
       <section className="banner p-5">
+        <div className="banner-home col-12">
+          <img
+            src={bannerhome}
+            alt="..."
+            className="img-fluid card-img-top banner-home-img"
+          />
+        </div>
         <div className="container-xxl">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 "></div>
@@ -22,13 +30,15 @@ function Home() {
               <div className="carouselExampleInterval slide carousel">
                 <div className="carousel-inner">
                   <div className="back-details">
+                    <div className="">
                       <p className="mb-3">Trade in offer</p>
-                    <h1>Super Value Deals</h1>
-                    <h2>On All Products</h2>
-                    <p className="mb-3">Save more today with Apneck</p>
-                    <Link to="/shop" className="btn btn-primary button-link">
-                      Shop Now
-                    </Link>
+                      <h1>Super Value Deals</h1>
+                      <h2>On All Products</h2>
+                      <p className="mb-3">Save more today with Apneck</p>
+                      <Link to="/shop" className="btn btn-primary button-link">
+                        Shop Now
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -80,7 +90,11 @@ function Home() {
               <div className="card m-auto mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
-                    <img src={banner1} alt="..." className="img-fluid rounded-start" />
+                    <img
+                      src={banner1}
+                      alt="..."
+                      className="img-fluid rounded-start"
+                    />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
@@ -105,7 +119,11 @@ function Home() {
               <div className="card m-auto mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
-                    <img src={banner2} alt="..." className="img-fluid rounded-start" />
+                    <img
+                      src={banner2}
+                      alt="..."
+                      className="img-fluid rounded-start"
+                    />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
@@ -201,7 +219,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <Newsletter/>
+      <Newsletter />
     </>
   );
 }

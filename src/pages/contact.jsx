@@ -1,4 +1,5 @@
 import React from "react";
+import bannerContact from "../imgs/banner/b1.jpg";
 
 function Contact() {
   return (
@@ -6,6 +7,9 @@ function Contact() {
       <section className="contact-wrapper p-5">
         <div className="container-xxl">
           <div className="row">
+            <div className=" banner-contact mt-3">
+              <img src={bannerContact} alt="..." />
+            </div>
             <div className="col-12 text-center">
               <h1 className="text">Reach Out to Us</h1>
               <p className="text fs-3">We are only a step away from you</p>
@@ -113,7 +117,10 @@ function Contact() {
                     </div>
 
                     <div className="col-12 text-center gap-2">
-                      <button type="submit" className="button-link button-contact">
+                      <button
+                        type="submit"
+                        className="button-link button-contact"
+                      >
                         Submit
                       </button>
                     </div>

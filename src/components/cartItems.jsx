@@ -3,9 +3,9 @@ import { useContext } from "react";
 import { ShopContext } from "./ShopContext.jsx";
 
 const CartItems = (props) => {
+  const { id, name, price, image, brand } = props.data;
   const { addToCart, removeToCart, updateCart, CartItems } =
     useContext(ShopContext);
-  const { id, name, price, image, brand } = props.data;
 
   const itemsInStock =
     id === 0 ? Math.ceil(((id + 2.5) * 102) / 2) : Math.ceil((id * 102.5) / 2);

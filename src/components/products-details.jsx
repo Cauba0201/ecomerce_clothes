@@ -72,12 +72,12 @@ const ProductsDetails = () => {
 
                 <div className="d-flex justify-content-center">
                   <button
-                    className="myButton"
                     onClick={() => {
                       addToCart(product.id);
-                      event.target.ClassList.toggle("red");
+                      event.target.classList.toggle("red");
                     }}
                     id="button-link"
+                    className="myButton"
                   >
                     Add To Card
                     {cartItemsAmount > 0 && ` (${cartItemsAmount})`}

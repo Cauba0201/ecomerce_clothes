@@ -4,6 +4,7 @@ import b2 from "../imgs/blog/b2.jpg";
 import b3 from "../imgs/blog/b3.jpg";
 import b4 from "../imgs/blog/b4.jpg";
 import b5 from "../imgs/blog/b5.jpg";
+import bannerblog from "../imgs/banner/b19.jpg";
 
 function Blog() {
   return (
@@ -12,6 +13,13 @@ function Blog() {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
+              <div className="banner-blog mt-3 col-12">
+                <img
+                  src={bannerblog}
+                  alt="..."
+                  className="img-fluid banner-blog-img "
+                />
+              </div>
               <div className="shop-details text-center align-items-center">
                 <h1 className="text-white ">#Read More</h1>
                 <p className="text-white fs-3">

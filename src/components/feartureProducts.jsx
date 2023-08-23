@@ -20,9 +20,8 @@ const FeartureProducts = () => {
                 <div className="card-footer text-center m-auto">
                   <p className="text-danger fs-4">{product.status}</p>
                   <p className="price">
-                    <span className="red">
-                      <strike>${product.rate}</strike>
-                    </span>
+                    <span className="red"></span>
+                    <strike>${product.rate}</strike>
                   </p>
                 </div>
                 <div className="card-footer d-md-none">
